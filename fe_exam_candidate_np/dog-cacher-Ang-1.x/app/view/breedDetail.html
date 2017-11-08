@@ -1,0 +1,7 @@
+<div ng-controller="breedController" class="col-xs-12">
+    <div ng-repeat="info in subBreedInfo track by $index" class="dogPicContainer col-md-2 col-xs-5 noPadding">
+        <span ng-click="subBreedInfo.splice($index,1)" class="glyphicon glyphicon-remove-circle pull-right" aria-hidden="true"></span>
+        <img src="{{info.img}}" alt="dog pic" class="dogImage img-thumbnail img-responsive noBorder">
+        <p class="text-center">{{info.breed}}</p>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+#searchSuggestions li{
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+#searchSuggestions{
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.dogPicContainer{
+  border: 1px solid #ccc;
+  margin-left: 15px;
+}
+.dogPicContainer .glyphicon-remove-circle{
+  font-size: 20px;
+}
+.dogImage{
+  height: 185px !important;
+  width: 185px;
+}
+#clearAll{
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+}
+.noLeftPadding{
+  padding-left: 0px !important;
+}
+.noPadding{
+  padding: 0px !important;
+}
+.noMargin{
+  margin: 0;
+}
+.noBorder{
+  border: 0;
+}
